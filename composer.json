@@ -8,5 +8,7 @@
             "email": "falahidev.info@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-gd": "*"
+    }
 }
