@@ -1,0 +1,12 @@
+{
+    "name": "mohammad/fake-ye-api",
+    "description": "Simple FakeYeBot API",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mohammad",
+            "email": "falahidev.info@gmail.com"
+        }
+    ],
+    "require": {}
+}
