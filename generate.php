@@ -4,7 +4,7 @@ include 'app/FarsiGD.php';
 
 $response = [];
 
-if (!isset($_POST['text'])) {
+if (!isset($_GET['text'])) {
 
     $response['error'] = true;
     $response['message'] = 'Please send true params';
@@ -18,7 +18,7 @@ if (!isset($_POST['text'])) {
 $gd = new FarsiGD();
 $ye_image = imagecreatefrompng('assets/image/Ye.png');
 
-$text = $_POST['text'];
+$text = $_GET['text'];
 $text = $gd->persianText($text, 'fa', 'normal');
 imagettftext($ye_image, 15, 0, 560 / 2, 450, $white_color, 'assets/fonts/cour.TTF', $text);
 
